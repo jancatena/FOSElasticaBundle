@@ -17,6 +17,10 @@
     <services>
         <defaults public="true" />
 
+        <prototype namespace="FOS\ElasticaBundle\Command\" resource="../../Command/*">
+            <tag name="console.command" />
+        </prototype>
+
         <service id="fos_elastica.client_prototype" class="%fos_elastica.client.class%" abstract="true">
             <argument type="collection" /> <!-- configuration -->
             <argument /> <!-- callback -->
