@@ -10,6 +10,8 @@
     </parameters>
 
     <services>
+        <defaults public="true" />
+
         <service id="fos_elastica.object_persister" class="%fos_elastica.object_persister.class%" abstract="true">
             <argument /> <!-- type -->
             <argument /> <!-- model to elastica transformer -->

@@ -11,6 +11,8 @@
     </parameters>
 
     <services>
+        <defaults public="true" />
+
         <service id="fos_elastica.model_to_elastica_transformer" class="%fos_elastica.model_to_elastica_transformer.class%" public="false" abstract="true">
             <argument type="collection" /> <!-- options -->
             <argument type="service" id="event_dispatcher" /> <!-- options -->
