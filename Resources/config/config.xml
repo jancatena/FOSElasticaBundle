@@ -17,7 +17,7 @@
     <services>
         <defaults public="true" />
 
-        <prototype namespace="FOS\ElasticaBundle\Command\" resource="../../Command/*">
+        <prototype namespace="FOS\ElasticaBundle\Command\" resource="../../Command/*" exclude="../../Command/{ProgressClosureBuilder.php}">
             <tag name="console.command" />
         </prototype>
 
